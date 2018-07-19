@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Guide to form tags in HTML</title>
+    </head>
+    <body>
+        <h1>This is the TLDR of the terms</h1>
+        <ol>
+            <li>There are many input types</li>
+            <ul>
+                <li>The 'type' parameter inside the input tag specifies what type of input you want</li>
+                <li>The most common ones are text,email, password, submit, radio</li>
+            </ul>
+            <li>The 'placeholder' parameter adds greyed out text inside the textbox</li>
+            <li>The 'name' parameter helps the receiving webpage to identify each user input is being sent</li>
+            <li>Label helps accessibility software to fill in the forms</li>
+            <li>To link the label tag to the input tag:</li>
+            <ul>
+                <li>Within the label tag, use the 'for' parameter</li>
+                <li>Within the input tag, use the 'id' parameter</li>
+            </ul>
+            <li>A form has 2 attributes</li>
+            <ol>
+                <li>Action: Where to send the data to (which website)</li>
+                <li>Method: Which method to use? A HTTP GET or POST?</li>
+            </ol>
+            <li>It doesn't matter if you use input type submit or button element, it does the same job</li>
+                <ul>
+                    <li>However, if you use a button element, it has to be the last element in the form for it to work</li>
+                </ul>
+            <li>To use form validation, add the word required inside an input tag. See last input form to see how it works</li>
+            <li>To set minimum length to passwords, use the pattern parameter inside the input element. pattern=".{8,12}"</li>
+            <li>If you want to space out the form into different lines, you can envelop elements in div tags</li>
+        </ol>
+        <h2>To find what type of inputs you want to use, search for MDN inputs</h2>
+        <input type="text" placeholder="username">
+        <input type="text" value="username">
+        <input type="password" placeholder="password">
+        <input type="submit">
+        <input type="radio" name="" value="">
+        <input type="color" name="" value="">
+        <h2>Note that the above is not yet a form, to be a form where it can be submitted as a whole, it must be enclosed in a form tag</h2>
+        <form>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+            <button>Log in</button>
+            <!-- Another way to create a button -->
+        </form>
+        <p>
+            Remember that within a form, there's two attributes
+            <ol>
+                <li>Action: Where the form sends the data to</li>
+                <li>Method: What HTTP method to use? GET or POST</li>
+            </ol>
+            If you create a form without an action attribute, it will send the data to the page where you are now
+            If you create a form without a HTTP method, it will default to a GET request
+            It doesn't matter if your form uses a button tag or an input button tag. both works
+        </p>
+        <form action="http://wikipedia.org" method="GET">
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+            <button>Log in</button>
+        </form>
+        <p>In this form, I've linked the log in button to send a GET request to wikipedia</p>
+        <h3>Now that we know how to create a form, how do we send the information need for the server to process?</h3>
+        <h4>By adding a name attribute to each input</h4>
+        <form action="http://wikipedia.org">
+            <input name='username' type="text" placeholder="username">
+            <input name='password' type="password" placeholder="password">
+            <button>Log in</button>
+        </form>
+        <h4>Now fill in the form and click submit, then notice the change in the URL</h4>
+        <h2>Label Guide</h2>
+        <h4>Why? Because by adding labels, it helps accessibility software (for visually impaired) to know what the page wants</h4>
+        <form>
+            <label>
+                Username:
+                <input name='username' type="text" placeholder="username">
+            </label>
+            <label>
+                Password:
+                <input name='password' type="password" placeholder="password">
+            </label>
+            <button>Log in</button>
+        </form>
+        <h2>Above shows one method of creating a form with label.</h2>
+        <h2>Here's a slightly cleaner method to create a form with labels</h2>
+        <form>
+            <label for="username">Email:</label>
+            <input type="email" id="username" name="username" placeholder="username" required>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" placeholder="password" required>
+            <input type="submit">
+        </form>
+        <h2>When using this method, make sure that the for and id matches</h2>
+    </body>
+</html>
