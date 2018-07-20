@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Specificity</title>
+        <style type="text/css">
+            ul {
+                color: purple;
+            }
+            li {
+                color: orange;
+            }
+            body {
+                color: red;
+            }
+            .highlight {
+                color: yellow;
+            }
+
+            #special {
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <p>HELLO!</p>
+        <ul>
+            <li id="special" class="highlight">John</li>
+            <li>Paul</li>
+            <li>George</li>
+            <li class="highlight">Ringo</li>
+        </ul>
+
+        <p>Inheritance: All child inherits the property of the parent. e.g. if you can the color of a ul, all li under it will change along with it.</p>
+        <p>Specificity: CSS is pretty messy.</p>
+        <p>Specificity just means: there can be multiple styles affecting a single element. However, the one that is closest in scope to the element wins.</p>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+h1 {
+    /* color: #FF0000; */
+    /* color: rgb(255,0,0); */
+    /* This is fully red */
+    color: rgba(255,0,0,.2);
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: red; */
+    /* Note that for border, width and style must be present for it to work.*/
+    border: 2px solid red;
+}
+
+h4 {
+    /* color: #3F0000; */
+    background: #FFF0F0;
+}
+
+li {
+    color: #00FFFF;
+    /* Blue */
+}
+
+body {
+    background: pink;
+    /* background: url(https://upload.wikimedia.org/wikipedia/en/3/3d/MountainAshFloor.jpg); */
+    /* background-repeat:no-repeat; /* If this is not added, the image would be tiled with multiple copies of that image*/ */
+    /* background-size: cover; /*This allows the one image to be stretched out to cover the entire page*/
+}
+
+/* For CSS colours, the first 2 hex digits indicate how much red is in the colour,
+the subsequent two determines green, and the last two determines blue.
+So, just remember the acronym "RGB" except that for a specific colour, it is #RRGGBB */

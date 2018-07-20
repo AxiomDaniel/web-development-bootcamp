@@ -1,0 +1,55 @@
+/* font-family */
+p {
+    font-family: Merienda;
+    /* font-size: 40px; */
+    font-size: 2.0em;
+}
+body{
+    font-size: 10px;
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: 5.0em;
+    This makes header five times as big as the body text.
+}
+
+/* font-size */
+h1 {
+    font-size: 80px;
+}
+
+span {
+    /* 2.0em just means twice the size of the relative element it is in. */
+    /* test the font size of the p */
+    font-size: 2.0em;
+}
+
+/* font-weight */
+p {
+    font-weight: bold;
+}
+
+/* line-height */
+p {
+    line-height: 1.5;
+    /* This changes the spacing between lines */
+}
+
+/* text-align */
+h1 {
+    text-align: right;
+}
+
+p {
+    text-align: center;
+}
+
+/* text-decoration */
+p {
+    text-decoration: underline;
+}
+
+h1{
+    text-decoration: line-through;
+}
