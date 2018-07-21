@@ -1,0 +1,27 @@
+p {
+    border: 2px solid blue;
+    /* border-top: : 5px; */
+    /* width: 200px; */
+    width: 50%;
+    /* What does 50% mean? It means 50% of the parent element. It can change dynamically according to the screen size. */
+    padding: 10px;
+    /* padding-left: 40px; */
+    /* margin: 100px; */
+    /* margin-top: 50px; */
+    /* Alternate way to specific margin on all four sides */
+    /* margin: <top> <right> <bottom> <left> */
+    /* margin: 20px 40px 500px 100px; */
+    margin: 0px auto 0px auto;
+    /* margin: 100px 20px; */
+}
+
+/* Basics of the Box Model
+element: The words
+padding: The space between the words and the border
+border: The border around the element
+margin: The invisible space around the border to allow you to space elements from each other */
+
+/* Colour on chrome inspector
+blue: element/content
+green is padding
+orange is margin */

@@ -1,0 +1,20 @@
+/* Using float: left is sort of like changing gravity to the left border of the screen
+All div elements will start stacking in one line expanding to the right as though gravity is on the left side. */
+/* One addition thing to note about float: it will remove the small white padding that is default when pictures line up next to each other */
+
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+h1 {
+    font-family: Raleway;
+    margin-left: 1.66%;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 1px solid #F1F1F1;
+    width: 30%;
+    padding-bottom: 20px;
+}

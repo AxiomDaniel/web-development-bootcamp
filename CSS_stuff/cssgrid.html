@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .blue {
+            background: #89e5ff;
+            border: 1px solid black;
+        }
+
+        .pink {
+            background: pink;
+            border: 1px solid black;
+        }
+
+        .red {
+            background: red;
+            border: 1px solid black;
+
+        }
+
+        .centertext {
+            text-align: center;
+        }
+    </style>
+    <title>CSS Grid Guide</title>
+</head>
+
+<body>
+    <h3>CSS Grid divides space into 12 equal portions. If there's 3 pictures, then each picture should use 4 parts</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="row">
+                    <div class="col-lg-6 pink">This is 6 units</div>
+                    <div class="col-lg-6 pink">Also 6 units</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 blue centertext">Tour date</div>
+            <div class="col-md-3 col-sm-6 blue centertext">Tour date</div>
+            <div class="col-md-3 col-sm-6">
+                <div class="row">
+                    <div class="col-lg-2 red">na</div>
+                    <div class="col-lg-2 red">na</div>
+                    <div class="col-lg-2 red">na</div>
+                    <div class="col-lg-2 red">na</div>
+                    <div class="col-lg-2 red">na</div>
+                    <div class="col-lg-2 red">na</div>
+                </div>
+            </div>
+            <!-- <div class="col-md-3 col-sm-6 blue centertext">Tour date</div>
+            <div class="col-md-3 col-sm-6 blue centertext">Tour date</div>
+            <div class="col-md-3 col-sm-6 blue centertext">Tour date</div>
+            <div class="col-md-3 col-sm-6 blue centertext">Tour date</div> -->
+        </div>
+        <!-- <div class="row">
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+            <div class="col-lg-1 col-md-2 blue centertext">COL LG 1</div>
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-lg-2 blue centertext">COL LG 2</div>
+            <div class="col-lg-2 blue centertext">COL LG 2</div>
+            <div class="col-lg-2 blue centertext">COL LG 2</div>
+            <div class="col-lg-2 blue centertext">COL LG 2</div>
+            <div class="col-lg-2 blue centertext">COL LG 2</div>
+        </div> -->
+        <!-- <div class="row">
+            <div class="col-lg-6 blue centertext">COLUMN LG 6</div>
+            <div class="col-lg-6 blue centertext">COLUMN LG 6</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 pink centertext">COLUMN LG 2</div>
+            <div class="col-lg-8 pink centertext">COLUMN LG 8</div>
+            <div class="col-lg-2 pink centertext">COLUMN LG 2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 red centertext">COLUMN LG 4</div>
+            <div class="col-lg-4 red centertext">COLUMN LG 4</div>
+            <div class="col-lg-4 red centertext">COLUMN LG 4</div>
+        </div> -->
+    </div>
+
+</body>
+
+</html>
