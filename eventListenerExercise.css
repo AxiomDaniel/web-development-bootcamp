@@ -1,0 +1,12 @@
+.body-purple {
+    background: purple;
+}
+
+/* Seems like I've forgotten. The classes with a period in front only works on those with that class designated in the HTML file. So, for example
+ <p class="body-purple">I'm purp</p>
+
+If you want the whole body to start at purple, then use the body tag by itself. */
+
+body {
+    background: white;
+}

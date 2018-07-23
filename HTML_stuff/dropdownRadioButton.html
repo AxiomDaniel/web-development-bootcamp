@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Inputs continued</title>
-    </head>
-    <body>
-        <input type="radio">
-        <input type="checkbox">
-        <p>The difference between a radio button and a checkbox button is that a radio button can't be toggled off. Try it</p>
-        <h3>Gender</h3>
-        <form>
-            <label for="Male">Male</label>
-            <input type="radio" id="Male" name="genderChoice" value="Male">
-            <label for="Female">Female</label>
-            <input type="radio" id="Female" name="genderChoice" value="Female">
-            <label for="Others">Others</label>
-            <input type="radio" id="Others" name="genderChoice" value="Others">
 
-            <p>In order to link up all the radio buttons into just one choice. i.e. you can only choose one gender.</p>
-            <p>You give them the same name parameter. In above, they all have name='genderChoice'</p>
-            <p>Remember from the last section that the name helps the receiving end of the form to determine what data it is receiving as well.</p>
-            <p>How to add info to the radio bu5tons for the receiving end to decide? Inside input tag, add a value parameter. e.g. value ='Male'</p>
+<head>
+    <meta charset="utf-8">
+    <title>Inputs continued</title>
+</head>
+
+<body>
+    <input type="radio">
+    <input type="checkbox">
+    <p>The difference between a radio button and a checkbox button is that a radio button can't be toggled off. Try it</p>
+    <h3>Gender</h3>
+    <form>
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="genderChoice" value="Male">
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="genderChoice" value="Female">
+        <label for="Others">Others</label>
+        <input type="radio" id="Others" name="genderChoice" value="Others">
+
+        <p>In order to link up all the radio buttons into just one choice. i.e. you can only choose one gender.</p>
+        <p>You give them the same name parameter. In above, they all have name='genderChoice'</p>
+        <p>Remember from the last section that the name helps the receiving end of the form to determine what data it is receiving as well.</p>
+        <p>How to add info to the radio buttons for the receiving end to decide? Inside input tag, add a value parameter. e.g. value ='Male'</p>
 
 
-            <h3>To create a dropdown menu, create a select tag</h3>
-            <p>Remember to add a name parameter to the select tag for identification</p>
-            <p>To add options into the dropdown menu, use the option tag </p>
-            <p>For the options tag, if you dont have a value parameter, it will send the plain text that was selected</p>
-            <p>If you dont want that, then specify something inside the value parameter</p>
-            <h2>Nationality</h2>
-            <select name="nationality">
+        <h3>To create a dropdown menu, create a select tag</h3>
+        <p>Remember to add a name parameter to the select tag for identification</p>
+        <p>To add options into the dropdown menu, use the option tag </p>
+        <p>For the options tag, if you dont have a value parameter, it will send the plain text that was selected</p>
+        <p>If you dont want that, then specify something inside the value parameter</p>
+        <h2>Nationality</h2>
+        <select name="nationality">
                 <option value="SG">Singapore</option>
                 <option value="MY">Malaysia</option>
                 <option value="AU">Australia</option>
             </select>
 
-            <h3>To create a text area, such as RP's reflection journal. Use the textarea tag</h3>
-            <textarea name="paragraph" rows="10" cols="50">Write your RJ here</textarea>
-            <input type="submit">
-        </form>
-    </body>
+        <h3>To create a text area, such as RP's reflection journal. Use the textarea tag</h3>
+        <textarea name="paragraph" rows="10" cols="50">Write your RJ here</textarea>
+        <input type="submit">
+    </form>
+</body>
+
 </html>
